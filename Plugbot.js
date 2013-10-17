@@ -342,7 +342,7 @@
   })();
 
   pupOnline = function() {
-    return API.sendChat(" .");
+    return API.sendChat(" Bot Online!");
   };
 
   populateUserData = function() {
@@ -1062,8 +1062,8 @@
     }
 
     skipCommand.prototype.init = function() {
-      this.command = '!op';
-      this.parseType = 'exact';
+      this.command = '!skip';
+      this.parseType = 'startsWith';
       return this.rankPrivelege = 'bouncer';
     };
 
